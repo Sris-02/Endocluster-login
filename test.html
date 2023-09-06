@@ -1,0 +1,51 @@
+<script>
+
+
+function selectRed() {
+    var el = document.getElementById("sample")
+    el.className = el.className.replace("green", "red")	
+}
+  
+function selectGreen() {
+    var el = document.getElementById("sample")
+    el.className = el.className.replace("red", "green")	
+}
+
+function square() {
+    var el = document.getElementById("sample")
+    el.className = el.className.replace("circle", "square")	
+}
+  
+function circle() {
+    var el = document.getElementById("sample")
+    el.className = el.className.replace("square", "circle")	
+}
+  
+	console.log("Hello")
+</script>
+
+<style>
+    .square {
+        width: 100px;
+        height: 100px;
+    }
+    .circle {
+        width: 100px;
+        height: 100px;
+        border-radius: 50px;
+    }
+    .red {
+        background: red;
+    }
+    .green {
+        background: green;
+    }
+</style>
+
+<div id="sample" class="red square"></div>
+
+<button onclick="selectRed()">Red</button>
+<button onclick="selectGreen()">Green</button>
+<br/>
+<button onclick="square()">square</button>
+<button onclick="circle()">circle</button>
